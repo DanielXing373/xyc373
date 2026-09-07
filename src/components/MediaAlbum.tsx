@@ -216,7 +216,7 @@ export function MediaAlbum({
           lightboxVideoRef.current?.pause();
         }
       },
-      { threshold: 0, rootMargin: "0px" },
+      { threshold: 0, rootMargin: "-48px" },
     );
 
     observer.observe(root);
