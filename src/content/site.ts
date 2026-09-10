@@ -181,6 +181,20 @@ export const site: SiteContent = {
         },
         {
           type: "image",
+          src: "/media/print-3d/lid.jpg",
+          alt: "Lid drawing from Autodesk Fusion.",
+          caption: "Lid drawing from Autodesk Fusion.",
+          detail: "",
+        },
+        {
+          type: "image",
+          src: "/media/print-3d/modular-wall.jpg",
+          alt: "Modular wall drawing from Autodesk Fusion.",
+          caption: "Modular wall drawing from Autodesk Fusion.",
+          detail: "",
+        },
+        {
+          type: "image",
           src: "/media/print-3d/enclosure.jpg",
           alt: "Enclosure drawing from Autodesk Fusion.",
           caption:

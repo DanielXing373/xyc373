@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local source media libraries (the site serves files from public/media/)
+/portofolio素材库/
+/0910素材库更新/
