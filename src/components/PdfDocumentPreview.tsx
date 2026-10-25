@@ -43,7 +43,7 @@ export function PdfDocumentPreview({
   return (
     <div id="main" className="flex min-h-[100svh] flex-col bg-paper px-5 py-8 md:px-10">
       <p className="text-sm text-ink-muted">
-        <Link href="/" className="inline-flex min-h-11 items-center text-accent hover:underline">
+        <Link href="/" className="inline-flex min-h-11 items-center text-accent underline underline-offset-2">
           Back to {site.title}
         </Link>
       </p>

@@ -233,9 +233,67 @@ export const site: SiteContent = {
       ],
     },
     {
+      id: "rapid-prototyping",
+      title: "Rapid Prototyping",
+      mediaSide: "end",
+      albumAspect: "16 / 9",
+      intro:
+        "A new **interactive device prototype every two weeks**, built for Cornell’s Interactive Device Design course.",
+      bullets: [
+        "Each prototype explores a different kind of interaction: **sound**, **light**, **time**, and **physical UI**",
+        "**Designed and built solo**, from ideation and prototyping to video editing",
+        "Built on a **Raspberry Pi 5** with sensors, displays, and servos. Materials were provided by Cornell Tech, with guidance from Professor Wendy Ju, the course instructor.",
+      ],
+      media: [
+        {
+          type: "video",
+          src: "/media/rapid-prototyping/pi-clock.mp4",
+          poster: "/media/rapid-prototyping/pi-clock-poster.jpg",
+          alt: "PiClock: a pixel-art game on a Raspberry Pi screen where the score tells the time.",
+          caption:
+            "PiClock. A pixel-art game that tells time. The score counts the seconds, and the scene changes with the seasons, holidays, and times of day.",
+          detail: "",
+        },
+        {
+          type: "video",
+          src: "/media/rapid-prototyping/texas-holdem.mp4",
+          poster: "/media/rapid-prototyping/texas-holdem-poster.jpg",
+          alt: "A Raspberry Pi that reads playing cards through a camera and plays Texas Hold'em by voice.",
+          caption:
+            "Texas Hold’em Pi. It reads the cards through a camera and plays a hand with you by voice.",
+          detail: "",
+        },
+        {
+          type: "video",
+          src: "/media/rapid-prototyping/patroller.mp4",
+          poster: "/media/rapid-prototyping/patroller-poster.jpg",
+          alt: "The Patroller: a cardboard robot that walks a drink over on two servos.",
+          caption:
+            "The Patroller. A two-servo robot modeled on the Patroller from Identity V. It walks a drink over and stops about 20 cm in front of you.",
+          detail: "",
+        },
+        {
+          type: "image",
+          src: "/media/rapid-prototyping/patroller-build.jpg",
+          alt: "The Patroller mid-build: a cardboard box body with two cardboard legs, wired to a Raspberry Pi.",
+          caption:
+            "The Patroller mid-build. A cardboard body with two servo-driven legs, wired to the Raspberry Pi.",
+          detail: "",
+        },
+        {
+          type: "image",
+          src: "/media/rapid-prototyping/patroller-sensor.jpg",
+          alt: "A SparkFun distance sensor taped to the front of the Patroller's cardboard body.",
+          caption:
+            "The distance sensor taped to the front. It tells the Patroller when to stop.",
+          detail: "",
+        },
+      ],
+    },
+    {
       id: "ai-ethics",
       title: "Research on AI in education (AIED)",
-      mediaSide: "end",
+      mediaSide: "start",
       layout: "compact",
       albumAspect: "16 / 9",
       intro:
@@ -301,7 +359,7 @@ export const site: SiteContent = {
     {
       id: "figma-app",
       title: "Reuse, Reduce, Recycle",
-      mediaSide: "start",
+      mediaSide: "end",
       albumAspect: "1241 / 1021",
       intro:
         "A marketplace app for the Vanderbilt campus community.",

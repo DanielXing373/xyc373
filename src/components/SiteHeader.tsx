@@ -20,7 +20,7 @@ export function SiteHeader() {
             <a
               key={item.href}
               href={item.href}
-              className="inline-flex min-h-11 items-center px-2 text-sm text-accent hover:underline sm:px-3"
+              className="inline-flex min-h-11 items-center px-2 text-sm text-accent underline underline-offset-2 sm:px-3"
             >
               {item.label}
             </a>
@@ -30,7 +30,7 @@ export function SiteHeader() {
           href="/resume"
           target="_blank"
           rel="noreferrer"
-          className="ml-auto inline-flex min-h-11 items-center px-3 text-sm text-accent hover:underline"
+          className="ml-auto inline-flex min-h-11 items-center px-3 text-sm text-accent underline underline-offset-2"
         >
           Resume
         </a>

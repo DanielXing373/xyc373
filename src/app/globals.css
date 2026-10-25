@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --paper: #f1eeea;
-  --paper-raised: #f7f5f2;
+  --paper: #f8f5f1;
+  --paper-raised: #fcfaf7;
   --paper-inset: #e3ddd6;
   --rule: #cfc8bf;
   --ink: #2a241f;
@@ -100,19 +100,24 @@ body {
 
 .hero-inventory .hero-eyebrow {
   font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
 }
 
 .hero-inventory {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 2.25rem;
   margin-top: 2.25rem;
   border-top: 1px solid var(--rule);
   padding-top: 1.9rem;
 }
 
-.hero-interests-copy {
-  max-width: 48rem;
+.hero-inventory-primary {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2.25rem;
 }
 
 .education-grid {
@@ -173,14 +178,16 @@ body {
 
 @media (min-width: 48rem) {
   .hero-inventory {
-    gap: 2.5rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    column-gap: 3rem;
+    row-gap: 2.5rem;
     margin-top: 2.5rem;
     padding-top: 2.15rem;
   }
 
-  .hero-interests-copy {
-    width: max-content;
-    max-width: 100%;
+  .hero-inventory-primary {
+    gap: 2.5rem;
   }
 
   .education-grid {

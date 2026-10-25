@@ -798,14 +798,23 @@ function VideoPreview({
             : "h-full w-full object-contain"
         }
         controls={started}
-        preload={started || Boolean(handoff) ? "auto" : "metadata"}
+        poster={item.poster}
+        preload={
+          started || Boolean(handoff) ? "auto" : item.poster ? "none" : "metadata"
+        }
         playsInline
         aria-label={item.alt}
         onError={onError}
         onPlay={onStart}
         onLoadedMetadata={(event) => {
           const video = event.currentTarget;
-          if (started || handoff || !Number.isFinite(video.duration) || video.duration <= 0) {
+          if (
+            started ||
+            handoff ||
+            item.poster ||
+            !Number.isFinite(video.duration) ||
+            video.duration <= 0
+          ) {
             return;
           }
           video.currentTime = Math.min(1.2, video.duration * 0.12);

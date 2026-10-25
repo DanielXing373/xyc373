@@ -6,7 +6,7 @@ English personal portfolio for [Yuchen Xing (Daniel)](mailto:yuchenxing373@gmail
 
 - **Hero** — name, portrait, contact, education (Cornell Tech, Vanderbilt, Rochester), and a short inventory of projects, interests, and internships
 - **Projects** — Pigeon White; DeathSpire Codex
-- **Interests** — 3D printing; research on AI in education (AIED); Reuse, Reduce, Recycle
+- **Interests** — 3D printing; rapid prototyping; research on AI in education (AIED); Reuse, Reduce, Recycle
 - **Internships** — NetEase Games; ChicPoint; Deloitte
 - [`/resume`](http://localhost:3000/resume) — résumé PDF preview
 - [`/ai-ethics`](http://localhost:3000/ai-ethics) — CAL Evaluation and Guided Adoption of AIED PDF preview

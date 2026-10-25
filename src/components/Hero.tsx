@@ -24,9 +24,7 @@ function HeroEyebrow({
   id?: string;
 }) {
   const label = href ? (
-    <a href={href} className="hover:underline">
-      {children}
-    </a>
+    <a href={href}>{children}</a>
   ) : (
     children
   );
@@ -61,7 +59,7 @@ export function Hero() {
           <p className="mt-3 flex flex-wrap items-baseline gap-x-2.5 text-[0.95rem] text-ink md:mt-4">
             <a
               href={`mailto:${site.email}`}
-              className="text-accent hover:underline"
+              className="text-accent underline underline-offset-2"
             >
               {site.email}
             </a>
@@ -72,7 +70,7 @@ export function Hero() {
                 </span>
                 <a
                   href={`tel:${site.phone.replace(/[^\d+]/g, "")}`}
-                  className="text-accent hover:underline"
+                  className="text-accent underline underline-offset-2"
                 >
                   {site.phone}
                 </a>
@@ -114,35 +112,54 @@ export function Hero() {
       </div>
 
       <div className="hero-inventory">
-        <div>
-          <HeroEyebrow id="here-are-my-projects">Here are my projects</HeroEyebrow>
-          <ul className="mt-3 space-y-3">
-            {site.featured.map((project) => (
-              <li key={project.id} className="space-y-0.5">
-                <a
-                  href={`#${project.id}`}
-                  className="font-display text-lg text-accent hover:underline md:text-[1.2rem]"
-                >
-                  {project.title}
-                </a>
-                <p className="max-w-3xl select-text text-base leading-relaxed text-ink">
-                  <LinkedText
-                    text={project.heroBlurb?.trim() || project.oneLine}
-                    bold={false}
-                  />
-                </p>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <div className="hero-inventory-primary">
+          <div>
+            <HeroEyebrow id="here-are-my-projects">Projects</HeroEyebrow>
+            <ul className="mt-3 space-y-3">
+              {site.featured.map((project) => (
+                <li key={project.id} className="space-y-0.5">
+                  <a
+                    href={`#${project.id}`}
+                    className="font-display text-lg text-accent underline underline-offset-2 md:text-[1.2rem]"
+                  >
+                    {project.title}
+                  </a>
+                  <p className="select-text text-base leading-relaxed text-ink">
+                    <LinkedText
+                      text={project.heroBlurb?.trim() || project.oneLine}
+                      bold={false}
+                    />
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        <div>
-          <HeroEyebrow href="#interests">Some of my other interests</HeroEyebrow>
-          <p className="hero-interests-copy mt-3 select-text text-base leading-relaxed text-ink">
-            <a href="#print-3d" className="text-accent underline underline-offset-2">3D printing</a>,{" "}
-            <a href="#ai-ethics" className="text-accent underline underline-offset-2">AI in education (AIED)</a>, and{" "}
-            <a href="#figma-app" className="text-accent underline underline-offset-2">Human-Computer Interaction (HCI)</a>.
-          </p>
+          <div>
+            <HeroEyebrow href="#interests">Other interests</HeroEyebrow>
+            <ul className="mt-3 space-y-1.5">
+              <li>
+                <a href="#print-3d" className="text-accent underline underline-offset-2">
+                  3D printing
+                </a>
+              </li>
+              <li>
+                <a href="#rapid-prototyping" className="text-accent underline underline-offset-2">
+                  Rapid prototyping
+                </a>
+              </li>
+              <li>
+                <a href="#ai-ethics" className="text-accent underline underline-offset-2">
+                  AI in education (AIED)
+                </a>
+              </li>
+              <li>
+                <a href="#figma-app" className="text-accent underline underline-offset-2">
+                  Human-Computer Interaction (HCI)
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div>
@@ -152,11 +169,11 @@ export function Hero() {
               <li key={entry.id} className="space-y-0.5">
                 <a
                   href={`#${entry.id}`}
-                  className="font-display text-lg text-accent hover:underline md:text-[1.2rem]"
+                  className="font-display text-lg text-accent underline underline-offset-2 md:text-[1.2rem]"
                 >
                   {entry.title}
                 </a>
-                <p className="max-w-3xl select-text text-base leading-relaxed text-ink">
+                <p className="select-text text-base leading-relaxed text-ink">
                   <LinkedText text={compactOneLine(entry)} bold={false} />
                 </p>
               </li>
