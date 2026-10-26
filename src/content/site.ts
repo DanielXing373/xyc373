@@ -60,6 +60,7 @@ export const site: SiteContent = {
         {
           type: "video",
           src: "/media/pgwhite/demo.mp4",
+          poster: "/media/pgwhite/demo-poster.jpg",
           alt: "A walkthrough of the Pigeon White quote library at pgwhitelib.com.",
           caption:
             "A walkthrough of the quote library at pgwhitelib.com, including bilingual UI and multi-axis filtering.",
@@ -95,6 +96,7 @@ export const site: SiteContent = {
         {
           type: "video",
           src: "/media/vr/02.mp4",
+          poster: "/media/vr/02-poster.jpg",
           alt: "A 70%-complete demo of DeathSpire Codex.",
           caption: "A 70%-complete demo.",
           detail: "",
@@ -154,6 +156,7 @@ export const site: SiteContent = {
         {
           type: "video",
           src: "/media/print-3d/demo.mp4",
+          poster: "/media/print-3d/demo-poster.jpg",
           alt: "Demo of the 3D-printed pump with start, pause, and reverse controls.",
           caption: "The pump demonstrating its three buttons",
           detail: "start/pause, forward, and reverse.",
